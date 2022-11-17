@@ -31,7 +31,7 @@ int avgtime(Process pro[], int n) {
         total_tat+=tat[i];
    }
     printf("Average Waiting Time = %f \n", (float)total_wt/(float)n);
-    printf("Average Turnaround Time = %f", (float)total_wt/(float)n);
+    printf("Average Turnaround Time = %f", (float)total_tat/(float)n);
     return 0;
 }
 
