@@ -1,0 +1,76 @@
+Shell Commands in Linux - 
+
+cd <path>  - Change directory
+cd .. go back
+mkdir <file> - make directory
+
+rmdir <file>- remove directory
+-m Sets access mode
+-p If parent directory does not exist, it is created.
+
+ls <options> - List contents of the current directory.
+ls -a Display all file (default)
+ls -c Display files by timestamp
+ls -d Display only directories
+ls -m Display names as comma-separated list.
+ls -q Display all non-printing chars as ?
+ls -r Display files in reverse order
+ls -R Display subdirectories as well
+ls -t Display newest files first.
+ls -u Display files by Access Time.
+cp <src.txt> <dest.txt>
+
+copy - copy first.txt second.txt -> First will be copied into second. If second doesn’t exist, second will be created.
+
+mv <src> <dest> - move
+-f Forces the move
+-i Prompt confirmation before overwriting.
+
+grep <option> <pattern> <file> - search in files
+Exit status 0 if matches found.
+Exit status 1 if matches not found.
+Exit status 2 if errors occurred.
+grep -b Display block number at the beginning of each line.
+grep -c Display number of matched lines.
+grep -h Display matched lines but not filenames.
+grep -l Ignore case sensitivity.
+grep -n Display matched lines nad filenames.
+grep -s Silent Mode.
+grep -v Display lines that DO NOT match.
+grep -w Match whole word
+
+who - Shows all logged in users
+ls who \sort
+whoami - Displays who we are in terms of how linux understands.
+
+pwd - print working directory
+
+cat <filenames> - read files
+cat Show file in stdout.
+cat -c “$” is printed at the end of each line.
+cat -n Show file preceding with line numbers.
+cat -s Suppress repeated empty lines in output.
+cat -u Output is unbuffered.
+cat -v Display control and non-printing chars.
+cat > Create a new file.
+cat file1 > file2 Copy contents of file1 to file2.
+gedit <filename>
+
+wc <filename> - word count, Display number of lines, words and letters in a file in that order
+wc -l Line count
+wc -c Byte count
+wc -m Character count.
+wc -w Word count.
+wc -L Length of longest line.
+
+ps - Displays list of processes running on the system.
+chmod  <mode> <filenames>
+change mode
+Change access mode of one or more files
+Add   - Remove
+Permission: r=read, w-write, x=execute
+Modes: u=user, g=group, o=other, a=all (default)
+chmod -R Descend directory args recursively
+chmod -f Supress Error messages.
+
+
